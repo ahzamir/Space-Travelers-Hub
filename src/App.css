@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   border-bottom: solid 1px #e8e8e8;
   padding: 2rem 4rem;
-  ;
+  
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
@@ -34,12 +34,13 @@ header {
   margin-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
-  color:rgb(23, 186, 132);
+  color: rgb(23, 186, 132);
 }
 
 .pageLink:hover {
   color: rgb(48, 225, 166);
 }
+
 .pageLink:focus {
   border-right: 2px solid black;
   text-decoration: underline;
