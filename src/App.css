@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #e8e8e8;
+  padding: 2rem 4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.navBar {
+  display: flex;
+}
+
+.pageLinksSection {
+  list-style: none;
+  display: flex;
+}
+
+.pageLink {
+  margin-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: rgb(23, 186, 132);
+}
+
+.pageLink:hover {
+  color: rgb(48, 225, 166);
+}
+
+.pageLink:focus {
+  border-right: 2px solid black;
+  text-decoration: underline;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-pic {
+  width: 7.5%;
+  margin-right: 0.7rem;
+}
+
+#logo-text {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
 }
