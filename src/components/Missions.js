@@ -4,6 +4,6 @@ const Missions = () => (
   <div>
     this is miisions page
   </div>
-)
+);
 
-export { Missions };
+export default Missions;

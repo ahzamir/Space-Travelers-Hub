@@ -4,6 +4,6 @@ const MyProfile = () => (
   <div>
     this is My Profile page
   </div>
-)
+);
 
-export { MyProfile };
+export default MyProfile;
