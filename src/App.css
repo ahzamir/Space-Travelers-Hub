@@ -19,7 +19,7 @@ header {
 
 .logo-pic {
   width: 7.5%;
-  margin:0.4rem 0.3rem  0rem 4rem;
+  margin:0.4rem 0.9rem  0rem 4rem;
 }
 
 #logo-text {
@@ -27,5 +27,5 @@ header {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.3rem;
-  margin: 1.3rem 0 ;
+  margin: 1.4rem 0 0 0;
 }
