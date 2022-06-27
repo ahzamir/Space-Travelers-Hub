@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
 body {
   margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid 1px #e8e8e8;
+  padding-bottom: 1rem;;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.logo-section{
+  display:flex;
+  flex-direction: row;
+}
+
+.logo-pic {
+  width: 7.5%;
+  margin:0.4rem 0.3rem  0rem 4rem;
+}
+
+#logo-text {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  margin: 1.3rem 0 ;
 }
