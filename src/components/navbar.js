@@ -26,7 +26,7 @@ const Navbar = () => {
         <img className="logo-pic" src={logoImg} alt="logo" />
         <span id="logo-text">Space Travelers &lsquo; Hub</span>
       </div>
-      <nav>
+      <nav className="navBar">
         <ul className="pageLinksSection">
           {links.map((link) => (
             <li key={link.id}>

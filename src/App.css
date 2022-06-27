@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -7,19 +13,30 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: solid 1px #e8e8e8;
-  padding-bottom: 1rem;;
+  padding: 2rem 4rem;;
   box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.navBar {
+  display: flex;
+}
+
+.navBar ul {
+  list-style: none;
+  display: flex;
 }
 
 .logo-section{
   display:flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .logo-pic {
   width: 7.5%;
-  margin:0.4rem 0.9rem  0rem 4rem;
+  margin-right: 0.7rem;
 }
 
 #logo-text {
@@ -27,5 +44,4 @@ header {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.3rem;
-  margin: 1.4rem 0 0 0;
 }
