@@ -26,6 +26,15 @@ const Navbar = () => {
         <img className="logo-pic" src={logoImg} alt="logo" />
         <span id="logo-text">Space Travelers &lsquo; Hub</span>
       </div>
+      <ul className="pageLinksSection">
+        {links.map((link) => (
+          <li key={link.id}>
+            <NavLink to={link.path} className="pageLink">
+              {link.text}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
     </header>
   )
 };
