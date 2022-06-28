@@ -9,7 +9,7 @@ const App = () => (
   <>
     <Navbar />
     <Routes>
-      <Route exact path="/" element={<Rockets />} />
+      <Route path="/" element={<Rockets />} />
       <Route path="missions" element={<Missions />} />
       <Route path="myprofile" element={<MyProfile />} />
     </Routes>
