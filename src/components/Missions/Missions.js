@@ -10,12 +10,12 @@ const Missions = () => {
     dispatch(getMissions());
   }, []);
   return (
-    <ul className='missionsLists'>
-      <li className='missions border'>
-        <h2 className='border missionContents'>Missions</h2>
-        <h2 className='border missionContents'>Description</h2>
-        <h2 className='border missionContents'>Status</h2>
-        <p className='border missionContents'></p>
+    <ul className="missionsLists">
+      <li className="missions border">
+        <h2 className="border missionContents">Missions</h2>
+        <h2 className="border missionContents">Description</h2>
+        <h2 className="border missionContents">Status</h2>
+        <p className="border missionContents" />
       </li>
       {missions.map((mission) => (
         <Mission

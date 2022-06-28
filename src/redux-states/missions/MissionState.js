@@ -12,10 +12,8 @@ const apiGetMissions = async () => {
   return data;
 };
 
-
 const getMissions = () => async (dispatch) => {
   const response = await apiGetMissions();
-  console.log(response)
   dispatch({
     type: GET_MISSIONS,
     payload: response,
@@ -25,7 +23,6 @@ const getMissions = () => async (dispatch) => {
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
-      console.log(action.payload);
       return action.payload;
     default: return state;
   }
