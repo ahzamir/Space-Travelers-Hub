@@ -22,3 +22,14 @@ const getMissions = () => async (dispatch) => {
   });
 };
 
+const missionsReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case GET_MISSIONS:
+      console.log(action.payload);
+      return action.payload;
+    default: return state;
+  }
+};
+
+export default missionsReducer;
+export { getMissions };
