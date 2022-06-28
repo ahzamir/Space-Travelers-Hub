@@ -11,3 +11,14 @@ const apiGetMissions = async () => {
   const data = await response.json();
   return data;
 };
+
+
+const getMissions = () => async (dispatch) => {
+  const response = await apiGetMissions();
+  console.log(response)
+  dispatch({
+    type: GET_MISSIONS,
+    payload: response,
+  });
+};
+
