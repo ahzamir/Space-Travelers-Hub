@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap&family=Cairo&display=swap');
 
 * {
   margin: 0;
@@ -33,11 +33,11 @@ header {
   margin-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
-  color: rgb(23, 186, 132);
+  color: #2FA4FF;
 }
 
 .pageLink:hover {
-  color: rgb(48, 225, 166);
+  color: #90E0EF;
 }
 
 .pageLink:focus {
@@ -63,7 +63,7 @@ header {
 }
 
 .rocket-images {
-  width:20%;
+  width:24%;
 }
 
 .rockets-container {
@@ -71,16 +71,43 @@ header {
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  margin:2rem 3rem 0rem 5rem;
+  margin:2rem 0rem 0rem 5rem;
 }
 
 .rocket{
   display: flex;
   flex-direction: row;
-  margin-bottom: 1rem;
+  margin-bottom: 3.7rem;
 }
 
 .rocket-info {
   display: flex;
   flex-direction: column;
+  justify-content:flex-start;
+  gap: 0.2rem;
+  margin:0rem 0rem 0rem 1rem ;
+}
+
+.rocket-name {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  bottom:5%;
+}
+
+.rocket-description{
+  width: 87%;
+}
+
+.reserve-button {
+  width: 19%;
+  border-radius: 0.3rem;
+  padding:0.9rem;
+  border:none;
+  font-size: 1rem;
+  background-color: #2FA4FF;
+  color:white;
+  margin-top: 0.7rem;
+  cursor: pointer;
 }

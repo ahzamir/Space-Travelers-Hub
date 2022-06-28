@@ -22,6 +22,7 @@ const Rockets = () => {
                   {rocket.reserved}
                   {rocket.description}
                 </span>
+                <button type="submit" className="reserve-button">Reserve Rocket</button>
               </div>
             </li>
           ))}
