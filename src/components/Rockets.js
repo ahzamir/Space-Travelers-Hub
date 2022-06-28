@@ -15,9 +15,9 @@ const Rockets = () => {
         <ul className="rockets">
           {rockets.map((rocket) => (
             <li className="rocket" key={rocket.id}>
-              <img src={rocket.flickr_images[0]} alt={rocket.name} className="rocket-images" />
+              <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} className="rocket-images" />
               <div className="rocket-info">
-                <span className="rocket-name">{rocket.name}</span>
+                <span className="rocket-name">{rocket.rocket_name}</span>
                 <span className="rocket-description">
                   {rocket.reserved}
                   {rocket.description}
