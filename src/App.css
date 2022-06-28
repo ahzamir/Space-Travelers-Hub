@@ -111,3 +111,42 @@ header {
   margin-top: 0.7rem;
   cursor: pointer;
 }
+
+.border {
+  border: 0.5px solid gray;
+}
+
+.missionsLists {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 4rem;
+  list-style: none;
+}
+
+.missionsLists li:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+.missions {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.missionContents {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.missionDescription {
+  font-size: 0.8rem;
+}
+
+.missionButtons {
+  justify-content: center;
+}
+
+.missionButton {
+  padding: 0.5rem;
+  border-radius: 7%;
+}
