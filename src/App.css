@@ -33,11 +33,11 @@ header {
   margin-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
-  color: #2FA4FF;
+  color: #2fa4ff;
 }
 
 .pageLink:hover {
-  color: #90E0EF;
+  color: #90e0ef;
 }
 
 .pageLink:focus {
@@ -63,18 +63,18 @@ header {
 }
 
 .rocket-images {
-  width:24%;
+  width: 24%;
 }
 
 .rockets-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-  margin:2rem 0rem 0rem 5rem;
+  margin: 2rem 0 0 5rem;
 }
 
-.rocket{
+.rocket {
   display: flex;
   flex-direction: row;
   margin-bottom: 3.7rem;
@@ -83,9 +83,9 @@ header {
 .rocket-info {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   gap: 0.2rem;
-  margin:0rem 0rem 0rem 1rem ;
+  margin: 0 0 0 1rem;
 }
 
 .rocket-name {
@@ -93,21 +93,21 @@ header {
   font-size: 1.4rem;
   font-weight: 600;
   position: relative;
-  bottom:5%;
+  bottom: 5%;
 }
 
-.rocket-description{
+.rocket-description {
   width: 87%;
 }
 
 .reserve-button {
   width: 19%;
   border-radius: 0.3rem;
-  padding:0.9rem;
-  border:none;
+  padding: 0.9rem;
+  border: none;
   font-size: 1rem;
-  background-color: #2FA4FF;
-  color:white;
+  background-color: #2fa4ff;
+  color: white;
   margin-top: 0.7rem;
   cursor: pointer;
 }
