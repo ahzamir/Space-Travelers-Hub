@@ -1,6 +1,6 @@
 const GET_MISSIONS = 'my-app/missions/GET_MISSIONS';
 const JOIN_MISSION = 'my-app/missions/JOIN_MISSION';
-const LEAVE_MISSION = 'my-app/missions/LEAVE_MISSION'
+const LEAVE_MISSION = 'my-app/missions/LEAVE_MISSION';
 const initialState = [];
 
 const apiGetMissions = async () => {
