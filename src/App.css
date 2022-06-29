@@ -146,9 +146,33 @@ header {
   justify-content: center;
 }
 
+.missionStatus {
+  background-color: gray;
+  color: white;
+  padding: 0.5rem;
+}
+
+.missionStatusActive {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem;
+}
+
+.missionLeaveButton {
+  padding: 0.5rem;
+  border: 1px solid red;
+  border-radius: 7%;
+  color: red;
+}
+
 .missionButton {
   padding: 0.5rem;
   border-radius: 7%;
+}
+
+.missionLeaveButton:hover,
+.missionButton:hover {
+  cursor: pointer;
 }
 
 .bagde {
@@ -179,3 +203,4 @@ header {
   padding-right: 0.2rem;
   text-align: center;
 }
+
