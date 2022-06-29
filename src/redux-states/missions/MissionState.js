@@ -35,6 +35,13 @@ const missionsReducer = (state = initialState, action) => {
         return { ...object, status: false };
       });
       return arrMissions;
+    case JOIN_MISSION:
+      const newState = state.map(mission => {
+        if (mission.id !== payload.id)
+          return mission;
+        return { ...mission, reserved: true };
+      });
+      return newState;
     default: return state;
   }
 };
