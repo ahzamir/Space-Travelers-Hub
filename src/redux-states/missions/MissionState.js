@@ -46,11 +46,16 @@ const missionsReducer = (state = initialState, action) => {
         if (mission.mission_id !== action.payload.id) return mission;
         return { ...mission, status: true };
       });
-      console.log(newState);
       return newState;
+    case LEAVE_MISSION:
+      const newStateWithNewStatus = state.map((mission) => {
+        if (mission.mission_id !== action.payload.id) return mission;
+        return { ...mission, status: false };
+      });
+      return newStateWithNewStatus;
     default: return state;
   }
 };
 
 export default missionsReducer;
-export { getMissions, joinMissions };
+export { getMissions, joinMissions, leaveMissions };
