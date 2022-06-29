@@ -1,7 +1,7 @@
 import React from 'react';
 
 const MyMissions = ({ title }) => (
-  <li className="joinedMission">
+  <li className="joinedMission border">
     {title}
   </li>
 );
