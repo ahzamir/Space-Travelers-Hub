@@ -146,6 +146,18 @@ header {
   justify-content: center;
 }
 
+.missionStatus {
+  background-color: gray;
+  color: white;
+  padding: 0.5rem;
+}
+
+.missionStatusActive {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem;
+}
+
 .missionLeaveButton {
   padding: 0.5rem;
   border: 1px solid red;
@@ -157,4 +169,3 @@ header {
   padding: 0.5rem;
   border-radius: 7%;
 }
-

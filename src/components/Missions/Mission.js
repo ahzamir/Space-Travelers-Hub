@@ -14,9 +14,14 @@ const Mission = ({
       <p className="border missionContents missionDescription">
         {description}
       </p>
-      <p className="border missionContents">
-        {status ? 'Active Member' : 'Not a Member'}
-      </p>
+      <div className="border missionContents missionButtons">
+        <button
+          type="button"
+          className={status ? 'missionStatusActive' : 'missionStatus'}
+        >
+          {status ? 'Active Member' : 'Not a Member'}
+        </button>
+      </div>
       <div className="border missionContents missionButtons">
         <button
           type="button"
