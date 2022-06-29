@@ -1,15 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Space Travelers Hub
 
-> Description the project.
+> The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section. We worked with the real-live data from the SpaceX API in this project. And build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions.
 
 
 ## Built With 
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML5
+- CSS3
+- JavaScript
+- React-Redux
+- Webpack
+- Jest
 
 ## Live Demo (if available) 💻
 
@@ -17,10 +20,6 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -44,14 +43,17 @@ To use this project or app run npm start in the project directory and you will s
 
 For running tests inside the project directory run npm test in command line or Terminal.
 
-### Deployment
-
-
 ## Authors
 
+### 👤 Ahmad Zamir Yousufi
 - GitHub: [@ahzamir](https://github.com/ahzamir).
 - Twitter: [@YousufiZamir](https://twitter.com/YousufiZamir)
 - LinkedIn: [ahmad-zamir-yousufi](https://www.linkedin.com/in/ahzamir/)
+
+### 👤 Nedjwa Bouraiou
+- GitHub: [@ahzamir](https://github.com/nedjwab).
+- Twitter: [@YousufiZamir](https://twitter.com/ned_jwa)
+- LinkedIn: [ahmad-zamir-yousufi](https://www.linkedin.com/in/wa-bouraiou-512a5015a/)
 
 ## 🤝 Contributing
 
