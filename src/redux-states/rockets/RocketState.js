@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const GET_ROCKETS = 'Space-Travelers-Hub/rockets/GET_ROCKETS';
 const RESERVE_ROCKET = 'space-travellers-hub/redux/rocket/RESERVE_TICKET';
-const CANCEL_RESERVATION = 'space-travellers-hub/redux/rocket/CANCEL_RESERVATION';
+const CANCEL_RESERVATION_ACTION = 'space-travellers-hub/redux/rocket/CANCEL_RESERVATION';
 
 export const getRockets = (payload) => ({
   type: GET_ROCKETS,
@@ -15,7 +15,7 @@ export const addReservation = (rocketId) => ({
 });
 
 export const cancelReservation = (rocketId) => ({
-  type: CANCEL_RESERVATION,
+  type: CANCEL_RESERVATION_ACTION,
   rocketId,
 });
 
@@ -51,7 +51,7 @@ const rocketReducer = (state = [], action) => {
 
       return newState;
     }
-    case CANCEL_RESERVATION: {
+    case CANCEL_RESERVATION_ACTION: {
       const newState = state.map((rocket) => {
         if (rocket.id !== action.rocketId) {
           return rocket;
