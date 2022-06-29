@@ -24,23 +24,21 @@ const getMissions = () => async (dispatch) => {
 const joinMissions = (id) => (
   {
     type: JOIN_MISSION,
-    payload: id,
+    payload: { id },
   }
 );
 
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
-      const arrMissions = action.payload.map(object => {
-        return { ...object, status: false };
-      });
+      const arrMissions = action.payload.map((object) => ({ ...object, status: false }));
       return arrMissions;
     case JOIN_MISSION:
-      const newState = state.map(mission => {
-        if (mission.id !== payload.id)
-          return mission;
-        return { ...mission, reserved: true };
+      const newState = state.map((mission) => {
+        if (mission.mission_id !== action.payload.id) return mission;
+        return { ...mission, status: true };
       });
+      console.log(newState);
       return newState;
     default: return state;
   }
