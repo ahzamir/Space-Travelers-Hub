@@ -1,15 +1,18 @@
 import { useDispatch } from 'react-redux/es/exports';
-import { addReservation } from '../redux-states/rockets/RocketState';
+import { addReservation, cancelReservation } from '../redux-states/rockets/RocketState';
 
-function Rocket(props) {
+function Rocket({ rocket }) {
   const dispatch = useDispatch();
-  const list = props;
   const {
     id, name, image, description, reserved,
-  } = list.myRockets;
+  } = rocket;
 
-  const reservationHandler = () => {
-    dispatch(addReservation(id));
+  const addHandlar = (rocketId) => {
+    dispatch(addReservation(rocketId));
+  };
+
+  const cancelHandler = (rocketId) => {
+    dispatch(cancelReservation(rocketId));
   };
 
   return (
@@ -20,15 +23,18 @@ function Rocket(props) {
           {name}
         </span>
         <div className="rocket-reserv">
-          <div className="rocket-bagde" style={reserved ? null : { display: 'none' }}>Reserved</div>
+          {reserved ? (<span className="rocket-bagde ">Reserved</span>) : (false)}
           <span className="rocket-description">
             {' '}
             {description}
             {' '}
           </span>
         </div>
-        { reserved ? <button type="button" className="cancel-button" onClick={reservationHandler}>Cancel Reservation</button>
-          : <button type="button" className="reserve-button" onClick={reservationHandler}>Reserve Rocket</button> }
+        {rocket.reserved ? (
+          <button onClick={() => cancelHandler(id)} type="button" className="cancel-button">Cancel Reservation</button>
+        ) : (
+          <button onClick={() => addHandlar(id)} type="button" className="reserve-button">Reserve Rocket</button>
+        )}
       </div>
     </div>
   );

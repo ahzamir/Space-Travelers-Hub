@@ -1,49 +1,66 @@
 import axios from 'axios';
 
 const GET_ROCKETS = 'Space-Travelers-Hub/rockets/GET_ROCKETS';
-const ADD_ROCKETS_RESERVATION = 'Space-Travelers-Hub/rockets/ADD_ROCKETS_RESERVATION';
+const RESERVE_ROCKET = 'space-travellers-hub/redux/rocket/RESERVE_TICKET';
+const CANCEL_RESERVATION = 'space-travellers-hub/redux/rocket/CANCEL_RESERVATION';
 
 export const getRockets = (payload) => ({
   type: GET_ROCKETS,
   payload,
 });
 
-export const addReservation = (payload) => ({
-  type: ADD_ROCKETS_RESERVATION,
-  payload,
+export const addReservation = (rocketId) => ({
+  type: RESERVE_ROCKET,
+  rocketId,
+});
+
+export const cancelReservation = (rocketId) => ({
+  type: CANCEL_RESERVATION,
+  rocketId,
 });
 
 const url = 'https://api.spacexdata.com/v3/rockets';
 export const fetchRockets = () => async (dispatch) => {
-  try {
-    const response = await axios.get(url);
-    const results = await response.data;
-    const rockets = [];
-    results.forEach((rocket) => {
-      rockets.push({
-        id: rocket.id,
-        image: rocket.flickr_images[0],
-        name: rocket.rocket_name,
-        description: rocket.description,
-        reserved: false,
-      });
+  const response = await axios.get(url);
+  const results = await response.data;
+  const rockets = [];
+  results.forEach((rocket) => {
+    rockets.push({
+      id: rocket.id,
+      name: rocket.rocket_name,
+      image: rocket.flickr_images[0],
+      description: rocket.description,
+      reserved: false,
     });
-    dispatch(getRockets(rockets));
-  } catch (error) {
-    <h2>Error</h2>;
-  }
+  });
+  dispatch(getRockets(rockets));
 };
 
 const rocketReducer = (state = [], action) => {
   switch (action.type) {
     case GET_ROCKETS:
       return action.payload;
-    case ADD_ROCKETS_RESERVATION: {
-      return state.map((rocket) => {
-        if (rocket.id !== action.payload) { return rocket; }
-        const newState = { ...rocket, reserved: !rocket.reserved };
-        return newState;
+    case RESERVE_ROCKET: {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.rocketId) {
+          return rocket;
+        }
+
+        return { ...rocket, reserved: true };
       });
+
+      return newState;
+    }
+    case CANCEL_RESERVATION: {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.rocketId) {
+          return rocket;
+        }
+
+        return { ...rocket, reserved: false };
+      });
+
+      return newState;
     }
     default:
       return state;
