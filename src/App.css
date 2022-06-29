@@ -204,3 +204,23 @@ header {
   text-align: center;
 }
 
+.myProfile {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  margin: 2rem 4rem;
+}
+
+.joinedMissions {
+  list-style: none;
+}
+
+.joinedMissions h2 {
+  margin-bottom: 1rem;
+}
+
+.joinedMission {
+  border: 1px solid black;
+  padding: 1rem;
+}
