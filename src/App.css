@@ -166,3 +166,16 @@ header {
   margin-top: 0.7rem;
   cursor: pointer;
 }
+
+.rocket-bagde {
+  position:relative;
+  background-color: #90e0ef;
+  color: white;
+  width:10%;
+  border-radius: 7%;
+  font-size: 1rem;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+  padding-right: 0.2rem;
+  text-align: center;
+}

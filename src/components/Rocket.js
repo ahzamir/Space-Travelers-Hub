@@ -19,12 +19,14 @@ function Rocket(props) {
         <span className="rocket-name">
           {name}
         </span>
-        <div className="reservation-badge" style={reserved ? null : { display: 'none' }}>Reserved</div>
-        <span className="rocket-description">
-          {' '}
-          {description}
-          {' '}
-        </span>
+        <div className="rocket-reserv">
+          <div className="rocket-bagde" style={reserved ? null : { display: 'none' }}>Reserved</div>
+          <span className="rocket-description">
+            {' '}
+            {description}
+            {' '}
+          </span>
+        </div>
         { reserved ? <button type="button" className="cancel-button" onClick={reservationHandler}>Cancel Reservation</button>
           : <button type="button" className="reserve-button" onClick={reservationHandler}>Reserve Rocket</button> }
       </div>
