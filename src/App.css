@@ -169,3 +169,8 @@ header {
   padding: 0.5rem;
   border-radius: 7%;
 }
+
+.missionLeaveButton:hover,
+.missionButton:hover {
+  cursor: pointer;
+}
