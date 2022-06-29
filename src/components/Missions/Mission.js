@@ -25,7 +25,7 @@ const Mission = ({
         <button
           type="button"
           className={status ? 'missionLeaveButton' : 'missionButton'}
-          onClick={() => { status ? dispatch(leaveMissions(id)) : dispatch(joinMissions(id)); }}
+          onClick={() => (status ? dispatch(leaveMissions(id)) : dispatch(joinMissions(id)))}
         >
           {status ? 'Leave Mission' : 'Join Mission'}
         </button>

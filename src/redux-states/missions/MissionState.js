@@ -39,20 +39,26 @@ const leaveMissions = (id) => (
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
+    {
       const arrMissions = action.payload.map((object) => ({ ...object, status: false }));
       return arrMissions;
+    }
     case JOIN_MISSION:
+    {
       const newState = state.map((mission) => {
         if (mission.mission_id !== action.payload.id) return mission;
         return { ...mission, status: true };
       });
       return newState;
+    }
     case LEAVE_MISSION:
+    {
       const newStateWithNewStatus = state.map((mission) => {
         if (mission.mission_id !== action.payload.id) return mission;
         return { ...mission, status: false };
       });
       return newStateWithNewStatus;
+    }
     default: return state;
   }
 };
