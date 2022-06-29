@@ -1,4 +1,5 @@
 const GET_MISSIONS = 'my-app/missions/GET_MISSIONS';
+const JOIN_MISSION = 'my-app/missions/JOIN_MISSION';
 const initialState = [];
 
 const apiGetMissions = async () => {
@@ -20,13 +21,23 @@ const getMissions = () => async (dispatch) => {
   });
 };
 
+const joinMissions = (id) => (
+  {
+    type: JOIN_MISSION,
+    payload: id,
+  }
+);
+
 const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_MISSIONS:
-      return action.payload;
+      const arrMissions = action.payload.map(object => {
+        return { ...object, status: false };
+      });
+      return arrMissions;
     default: return state;
   }
 };
 
 export default missionsReducer;
-export { getMissions };
+export { getMissions, joinMissions };

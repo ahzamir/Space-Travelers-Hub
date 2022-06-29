@@ -22,6 +22,7 @@ const Missions = () => {
           key={mission.mission_id}
           title={mission.mission_name}
           description={mission.description}
+          status={mission.status}
         />
       ))}
     </ul>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Mission = ({ title, description }) => (
+const Mission = ({ title, description, status }) => (
   <li className="missions border">
     <h2 className="border missionContents">
       {title}
@@ -9,7 +9,7 @@ const Mission = ({ title, description }) => (
       {description}
     </p>
     <p className="border missionContents">
-      Not a member
+      {status ? 'Active Member' : 'Not a Member'}
     </p>
     <div className="border missionContents missionButtons">
       <button
