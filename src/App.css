@@ -146,7 +146,15 @@ header {
   justify-content: center;
 }
 
+.missionLeaveButton {
+  padding: 0.5rem;
+  border: 1px solid red;
+  border-radius: 7%;
+  color: red;
+}
+
 .missionButton {
   padding: 0.5rem;
   border-radius: 7%;
 }
+

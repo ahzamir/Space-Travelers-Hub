@@ -20,7 +20,7 @@ const Mission = ({
       <div className="border missionContents missionButtons">
         <button
           type="button"
-          className="missionButton"
+          className={status ? 'missionLeaveButton' : 'missionButton'}
           onClick={() => { status ? dispatch(leaveMissions(id)) : dispatch(joinMissions(id)); }}
         >
           {status ? 'Leave Mission' : 'Join Mission'}
