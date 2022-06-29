@@ -25,7 +25,7 @@ function Rocket(props) {
           {description}
           {' '}
         </span>
-        { reserved ? <button type="button" className="cancelRocket btnRocket" onClick={reservationHandler}>Cancel Reservation</button>
+        { reserved ? <button type="button" className="cancel-button" onClick={reservationHandler}>Cancel Reservation</button>
           : <button type="button" className="reserve-button" onClick={reservationHandler}>Reserve Rocket</button> }
       </div>
     </div>
