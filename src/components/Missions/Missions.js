@@ -23,6 +23,7 @@ const Missions = () => {
           title={mission.mission_name}
           description={mission.description}
           status={mission.status}
+          id={mission.mission_id}
         />
       ))}
     </ul>
