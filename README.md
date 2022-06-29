@@ -48,12 +48,12 @@ For running tests inside the project directory run npm test in command line or T
 ### 👤 Ahmad Zamir Yousufi
 - GitHub: [@ahzamir](https://github.com/ahzamir).
 - Twitter: [@YousufiZamir](https://twitter.com/YousufiZamir)
-- LinkedIn: [ahmad-zamir-yousufi](https://www.linkedin.com/in/ahzamir/)
+- LinkedIn: [ahzamir](https://www.linkedin.com/in/ahzamir/)
 
 ### 👤 Nedjwa Bouraiou
-- GitHub: [@ahzamir](https://github.com/nedjwab).
-- Twitter: [@YousufiZamir](https://twitter.com/ned_jwa)
-- LinkedIn: [ahmad-zamir-yousufi](https://www.linkedin.com/in/wa-bouraiou-512a5015a/)
+- GitHub: [@nedjwab](https://github.com/nedjwab).
+- Twitter: [@ned_jwa](https://twitter.com/ned_jwa)
+- LinkedIn: [nedjwa](https://www.linkedin.com/in/wa-bouraiou-512a5015a/)
 
 ## 🤝 Contributing
 
