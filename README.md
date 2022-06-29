@@ -53,7 +53,7 @@ For running tests inside the project directory run npm test in command line or T
 ### 👤 Nedjwa Bouraiou
 - GitHub: [@nedjwab](https://github.com/nedjwab).
 - Twitter: [@ned_jwa](https://twitter.com/ned_jwa)
-- LinkedIn: [nedjwa](https://www.linkedin.com/in/wa-bouraiou-512a5015a/)
+- LinkedIn: [nedjwa](https://www.linkedin.com/in/nedjwa-bouraiou-512a5015a/)
 
 ## 🤝 Contributing
 
