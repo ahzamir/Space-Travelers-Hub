@@ -25,7 +25,7 @@ describe('Testing Mission component', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <Rocket page="just for test">Missions</Rocket>
+          <Rocket page="just for test">Rockets</Rocket>
         </Provider>,
       )
       .toJSON();
