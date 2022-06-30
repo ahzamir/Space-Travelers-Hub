@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../../redux-states/configureStore';
 
-import MyRocket from '../rockets/Myrockets';
+import MyRocket from '../rockets/MyRockets';
 
 describe('Testing Mission component', () => {
   render(
