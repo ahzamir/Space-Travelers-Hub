@@ -21,7 +21,7 @@ const MyProfile = () => {
           />
         ))}
       </ul>
-      <ul>
+      <ul className="joinedRockets">
         <h2>
           My Rockets
         </h2>
