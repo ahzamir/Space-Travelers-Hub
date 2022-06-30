@@ -19,4 +19,12 @@ describe('Testing Mission component', () => {
     expect(screen.queryByTestId('nothing')).not.toBeInTheDocument();
   });
 
+  it('renders correctly', () => {
+    const tree = renderer
+      .create(<Provider store={store}>
+        <MyMissions page="just for test">MyMissions</MyMissions>
+      </Provider>)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 })
