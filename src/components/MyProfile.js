@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MyMissions from './Missions/MyMissions';
-import MyRockets from './rockets/Myrockets';
+import MyRockets from './rockets/MyRockets';
 
 const MyProfile = () => {
   const missions = useSelector((state) => state.missions);
