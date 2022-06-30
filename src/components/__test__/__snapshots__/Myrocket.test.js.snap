@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission component renders correctly 1`] = `
+<li
+  className="joinedMission border"
+  data-testid="rocketid"
+/>
+`;
