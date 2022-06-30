@@ -14,9 +14,10 @@
 - Webpack
 - Jest
 
-## Live Demo (if available) 💻
+## Live Demo (Netlify) 💻
 
-[Live Demo Link](https://livedemo.com)
+[Space-Travelers-Hub](https://62bdb96de9b7da2551d862ec--glittering-brigadeiros-3b2f47.netlify.app/)
+
 
 
 ## Getting Started
