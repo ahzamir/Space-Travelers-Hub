@@ -223,3 +223,11 @@ header {
 .joinedMission {
   padding: 1rem;
 }
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  margin-bottom: 0.9rem;
+}
