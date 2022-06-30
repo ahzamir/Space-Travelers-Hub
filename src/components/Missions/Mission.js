@@ -7,7 +7,7 @@ const Mission = ({
 }) => {
   const dispatch = useDispatch();
   return (
-    <li className="missions border">
+    <li className="missions border" data-testid="missionContent">
       <h2 className="border missionContents">
         {title}
       </h2>

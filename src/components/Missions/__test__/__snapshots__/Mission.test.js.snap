@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Mission component renders correctly 1`] = `
+<li
+  className="missions border"
+  data-testid="missionContent"
+>
+  <h2
+    className="border missionContents"
+  />
+  <p
+    className="border missionContents missionDescription"
+  />
+  <div
+    className="border missionContents missionButtons"
+  >
+    <p
+      className="missionStatus"
+    >
+      Not a Member
+    </p>
+  </div>
+  <div
+    className="border missionContents missionButtons"
+  >
+    <button
+      className="missionButton"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </div>
+</li>
+`;
