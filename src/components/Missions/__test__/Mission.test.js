@@ -15,4 +15,8 @@ describe('Testing Mission component', () => {
     expect(screen.queryByTestId('missionsContent')).toBeInTheDocument();
   });
 
+  test('Testing the dom for non existing elemente on the page after rendering', () => {
+    expect(screen.queryByTestId('nothing')).not.toBeInTheDocument();
+  });
+
 })
