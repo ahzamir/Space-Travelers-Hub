@@ -3,18 +3,18 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import store from '../../../redux-states/configureStore';
+import store from '../../redux-states/configureStore';
 
-import Mission from '../Mission';
+import Rocket from '../rockets/Rockets';
 
 describe('Testing Mission component', () => {
   render(
     <Provider store={store}>
-      <Mission />
+      <Rocket />
     </Provider>,
   );
   test('Testing the dom for success rendering elements on Mission component', () => {
-    expect(screen.queryByTestId('missionContent')).toBeInTheDocument();
+    expect(screen.queryByTestId('rocketid')).toBeInTheDocument();
   });
 
   test('Testing the dom for non existing elemente on the page after rendering', () => {
@@ -25,7 +25,7 @@ describe('Testing Mission component', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <Mission page="just for test">Mission</Mission>
+          <Rocket page="just for test">Rockets</Rocket>
         </Provider>,
       )
       .toJSON();
