@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap&family=Cairo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #e8e8e8;
+  padding: 2rem 4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.navBar {
+  display: flex;
+}
+
+.pageLinksSection {
+  list-style: none;
+  display: flex;
+}
+
+.pageLink {
+  margin-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: #2fa4ff;
+}
+
+.pageLink:hover {
+  color: #90e0ef;
+}
+
+.pageLink:focus {
+  border-right: 2px solid black;
+  text-decoration: underline;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-pic {
+  width: 7.5%;
+  margin-right: 0.7rem;
+}
+
+#logo-text {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+.rocket-images {
+  width: 24%;
+}
+
+.rockets-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 0 5rem;
+}
+
+.rocket {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3.7rem;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  margin: 0 0 0 1rem;
+}
+
+.rocket-name {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: relative;
+  bottom: 5%;
+}
+
+.rocket-description {
+  width: 87%;
+}
+
+.reserve-button {
+  width: 19%;
+  border-radius: 0.3rem;
+  padding: 0.9rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #2fa4ff;
+  color: white;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+.border {
+  border: 0.5px solid gray;
+}
+
+.missionsLists {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 4rem;
+  list-style: none;
+}
+
+.missionsLists li:nth-child(even) {
+  background-color: rgb(240, 240, 240);
+}
+
+.missions {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+}
+
+.missionContents {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.missionDescription {
+  font-size: 0.8rem;
+}
+
+.missionButtons {
+  justify-content: center;
+}
+
+.missionStatus {
+  background-color: gray;
+  color: white;
+  padding: 0.5rem;
+}
+
+.missionStatusActive {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem;
+}
+
+.missionLeaveButton {
+  padding: 0.5rem;
+  border: 1px solid red;
+  border-radius: 7%;
+  color: red;
+}
+
+.missionButton {
+  padding: 0.5rem;
+  border-radius: 7%;
+}
+
+.missionLeaveButton:hover,
+.missionButton:hover {
+  cursor: pointer;
+}
+
+.bagde {
+  background-color: pink;
+}
+
+.cancel-button {
+  width: 19%;
+  border-radius: 0.3rem;
+  padding: 0.9rem;
+  border: none;
+  font-size: 1rem;
+  background-color: #2fa4ff;
+  color: white;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+.rocket-bagde {
+  position: relative;
+  background-color: #90e0ef;
+  color: white;
+  width: 10%;
+  border-radius: 7%;
+  font-size: 1rem;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 600;
+  padding-right: 0.2rem;
+  text-align: center;
+}
+
+.myProfile {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  margin: 2rem 4rem;
+}
+
+.joinedMissions {
+  list-style: none;
+}
+
+.joinedMissions h2 {
+  margin-bottom: 1rem;
+}
+
+.joinedMission {
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.joinedRockets h2 {
+  margin-bottom: 0.9rem;
+}
