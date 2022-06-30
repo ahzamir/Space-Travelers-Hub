@@ -1,31 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing Mission component renders correctly 1`] = `
-<ul
-  className="missionsLists"
-  data-testid="missionsContent"
+<li
+  className="missions border"
+  data-testid="missionContent"
 >
-  <li
-    className="missions border"
+  <h2
+    className="border missionContents"
+  />
+  <p
+    className="border missionContents missionDescription"
+  />
+  <div
+    className="border missionContents missionButtons"
   >
-    <h2
-      className="border missionContents"
-    >
-      Missions
-    </h2>
-    <h2
-      className="border missionContents"
-    >
-      Description
-    </h2>
-    <h2
-      className="border missionContents"
-    >
-      Status
-    </h2>
     <p
-      className="border missionContents"
-    />
-  </li>
-</ul>
+      className="missionStatus"
+    >
+      Not a Member
+    </p>
+  </div>
+  <div
+    className="border missionContents missionButtons"
+  >
+    <button
+      className="missionButton"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </div>
+</li>
 `;
