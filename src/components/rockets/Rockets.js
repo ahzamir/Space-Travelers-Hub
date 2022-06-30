@@ -7,7 +7,7 @@ const Rockets = () => {
   return (
     <>
       <div className="rockets-container" data-testid="rocketid">
-        <ul className="rockets" >
+        <ul className="rockets">
           {rockets.map((rocket) => (
             <Rocket
               key={rocket.id}

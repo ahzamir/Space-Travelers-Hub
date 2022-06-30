@@ -16,7 +16,7 @@ function Rocket({ rocket }) {
   };
 
   return (
-    <div className="rocket">
+    <div className="rocket" data-testid="rocketid">
       <img src={image} alt={name} className="rocket-images" />
       <div className="rocket-info">
         <span className="rocket-name">
