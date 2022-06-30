@@ -4,7 +4,7 @@ import Mission from './Mission';
 const Missions = () => {
   const missions = useSelector((state) => state.missions);
   return (
-    <ul className="missionsLists">
+    <ul className="missionsLists" data-testid="missionsContent">
       <li className="missions border">
         <h2 className="border missionContents">Missions</h2>
         <h2 className="border missionContents">Description</h2>
