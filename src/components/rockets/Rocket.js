@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux/es/exports';
-import { addReservation, cancelReservation } from '../redux-states/rockets/RocketState';
+import { addReservation, cancelReservation } from '../../redux-states/rockets/RocketState';
 
 function Rocket({ rocket }) {
   const dispatch = useDispatch();

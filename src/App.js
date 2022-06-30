@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getMissions } from './redux-states/missions/MissionState';
 import Navbar from './components/navbar';
-import Rockets from './components/Rockets';
+import Rockets from './components/rockets/Rockets';
 import Missions from './components/Missions/Missions';
 import MyProfile from './components/MyProfile';
 import { fetchRockets } from './redux-states/rockets/RocketState';
