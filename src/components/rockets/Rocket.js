@@ -1,4 +1,4 @@
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch } from 'react-redux';
 import { addReservation, cancelReservation } from '../../redux-states/rockets/RocketState';
 
 function Rocket({ rocket }) {

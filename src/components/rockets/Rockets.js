@@ -6,8 +6,8 @@ const Rockets = () => {
   const rockets = useSelector((state) => state.rockets);
   return (
     <>
-      <div className="rockets-container">
-        <ul className="rockets">
+      <div className="rockets-container" data-testid="rocketid">
+        <ul className="rockets" >
           {rockets.map((rocket) => (
             <Rocket
               key={rocket.id}
